@@ -13,4 +13,5 @@ contract ExampleConstructor{
     function setMyAddress(address _myAddress) public{
         myAddress = _myAddress;
     }
+    
 }
