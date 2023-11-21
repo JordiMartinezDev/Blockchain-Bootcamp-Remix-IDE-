@@ -6,7 +6,10 @@ contract ContractToBeDeployed{
 
     string public myFirstStringOnChain = "Hello Chain";
 
-    function updateString(string memory _newString)public{
+    function updateString(string memory _newString)public payable{
+        if(msg.value == 100 wei){
         myFirstStringOnChain = _newString;
+
+        }
     }
 }
