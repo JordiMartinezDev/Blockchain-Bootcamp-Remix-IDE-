@@ -10,6 +10,6 @@ contract ContractToBeDeployed{
         if(msg.value == 100 wei){
         myFirstStringOnChain = _newString;
 
-        }
+        }else payable(msg.sender).transfer(msg.value);
     }
 }
