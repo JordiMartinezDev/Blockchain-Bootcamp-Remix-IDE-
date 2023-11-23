@@ -72,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/WalletContract.sol": "WalletContract"
+			"contracts/NewWalletTest.sol": "WalletContract"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -86,7 +86,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/WalletContract.sol": {
+		"contracts/NewWalletTest.sol": {
 			"keccak256": "0x625437222d52d1f281e8c0fe1c8eef5fecd6a275946a151cf20be058689b98c6",
 			"license": "MIT",
 			"urls": [
