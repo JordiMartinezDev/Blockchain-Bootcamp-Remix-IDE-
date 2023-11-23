@@ -6,63 +6,47 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"name": "ErrorBytes",
-				"type": "error"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balanceReceived",
-				"outputs": [
-					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "code",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "ErrorAssertCode",
+				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "receiveMoney",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "throwErrorFunction",
-				"outputs": [],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint8",
-						"name": "_amount",
-						"type": "uint8"
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "code",
+						"type": "bytes"
 					}
 				],
-				"name": "withdrawMoney",
+				"name": "ErrorBytes",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "reason",
+						"type": "string"
+					}
+				],
+				"name": "ErrorRequire",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "catchTheError",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -81,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/TryCatch.sol": "TryCatch"
+			"contracts/TryCatch.sol": "ErrorHandling"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
